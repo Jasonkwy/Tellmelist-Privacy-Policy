@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TellmeList - Privacy Policy & Terms</title>
+    <style>
+        :root {
+            --primary-color: #4a6fa5;
+            --secondary-color: #6b8cbc;
+            --accent-color: #ff6b6b;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+            --text-color: #333;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #f5f7fa;
+            padding: 0;
+            margin: 0;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        
+        .card {
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        h3 {
+            color: var(--secondary-color);
+            margin: 1.5rem 0 1rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .highlight {
+            background-color: #e7f3ff;
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+        
+        .warning {
+            background-color: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+        
+        .contact-info {
+            background-color: var(--light-color);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+        
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .nav-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .tab {
+            padding: 0.8rem 1.5rem;
+            background: white;
+            border: none;
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
+            margin: 0 0.2rem;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--dark-color);
+            transition: all 0.3s ease;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .tab.active {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 20px;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            box-shadow: var(--box-shadow);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .card {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .nav-tabs {
+                flex-direction: column;
+            }
+            
+            .tab {
+                border-radius: var(--border-radius);
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="app-icon">📝</div>
+        <h1>TellmeList</h1>
+        <p class="tagline">Your privacy-first shopping list app</p>
+    </header>
+    
+    <div class="container">
+        <div class="nav-tabs">
+            <button class="tab active" data-tab="privacy">Privacy Policy</button>
+            <button class="tab" data-tab="terms">Terms of Use</button>
+            <button class="tab" data-tab="support">Support</button>
+        </div>
+        
+        <div id="privacy" class="tab-content active">
+            <div class="card">
+                <h2>Privacy Policy</h2>
+                <p><strong>Effective Date</strong>: [Date of App Store Submission]<br>
+                <strong>Last Updated</strong>: [Date of App Store Submission]</p>
+                
+                <h3>Overview</h3>
+                <p>TellmeList ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how our mobile application handles information when you use TellmeList.</p>
+                
+                <h3>Information We Do NOT Collect</h3>
+                <p>TellmeList is designed with privacy as a core principle. We want to be completely transparent about what we do and do not collect:</p>
+                
+                <div class="warning">
+                    <h3>❌ We DO NOT collect:</h3>
+                    <ul>
+                        <li>Personal information (name, email, phone number)</li>
+                        <li>Shopping list content or items</li>
+                        <li>Voice recordings or speech data</li>
+                        <li>Device identifiers or advertising IDs</li>
+                        <li>Location information</li>
+                        <li>Usage analytics or app behavior data</li>
+                        <li>Crash reports or diagnostic information</li>
+                        <li>Any other personal or sensitive information</li>
+                    </ul>
+                </div>
+                
+                <h3>How TellmeList Works</h3>
+                
+                <div class="highlight">
+                    <h3>✅ Local Storage Only</h3>
+                    <ul>
+                        <li>All your shopping lists are stored locally on your iPhone</li>
+                        <li>Data never leaves your device</li>
+                        <li>No cloud storage or remote servers are used</li>
+                        <li>No internet connection is required for the app to function</li>
+                    </ul>
+                </div>
+                
+                <div class="highlight">
+                    <h3>✅ Voice Input Processing</h3>
+                    <ul>
+                        <li>Voice recognition is processed entirely on your device using Apple's built-in speech recognition</li>
+                        <li>Voice data is converted to text locally and immediately discarded</li>
+                        <li>No voice recordings are stored or transmitted</li>
+                        <li>Microphone access is only used when you tap the voice input button</li>
+                    </ul>
+                </div>
+                
+                <div class="highlight">
+                    <h3>✅ Offline Functionality</h3>
+                    <ul>
+                        <li>TellmeList works completely offline</li>
+                        <li>No network requests are made to external servers</li>
+                        <li>No data transmission occurs during app usage</li>
+                    </ul>
+                </div>
+                
+                <h3>Third-Party Services</h3>
+                <p>TellmeList does not integrate with any third-party services, analytics providers, or advertising networks.</p>
+                
+                <h3>Data Security</h3>
+                <p>Since all data remains on your device:</p>
+                <ul>
+                    <li>Your shopping lists are protected by your iPhone's built-in security features</li>
+                    <li>Data is automatically secured through iOS encryption</li>
+                    <li>No additional security risks from data transmission or cloud storage</li>
+                </ul>
+                
+                <h3>Children's Privacy</h3>
+                <p>TellmeList is safe for users of all ages. Since we don't collect any personal information, there are no special considerations for children under 13.</p>
+                
+                <h3>Changes to This Privacy Policy</h3>
+                <p>If we make any changes to this Privacy Policy, we will update the "Last Updated" date and post the new policy in the app and on our website. Changes will be effective immediately upon posting.</p>
+                
+                <h3>Your Rights</h3>
+                <p>Since TellmeList doesn't collect any personal data:</p>
+                <ul>
+                    <li>There is no personal data to access, modify, or delete</li>
+                    <li>All app data can be removed by simply deleting the app from your iPhone</li>
+                    <li>No data export is necessary as everything stays on your device</li>
+                </ul>
+                
+                <h3>Compliance</h3>
+                <p>This Privacy Policy complies with:</p>
+                <ul>
+                    <li>Apple App Store Review Guidelines</li>
+                    <li>iOS privacy requirements</li>
+                    <li>General data protection principles</li>
+                </ul>
+                
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+                    <p><strong>Email</strong>: <a href="mailto:support@stechbds.com">support@stechbds.com</a></p>
+                    <p><strong>Developer</strong>: Kwokwaiyip/Stechbds</p>
+                </div>
+                
+                <div class="highlight">
+                    <p><strong>Summary</strong>: TellmeList is a privacy-first app. We don't collect, store, or transmit any of your personal information. Your shopping lists stay private and secure on your iPhone.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="terms" class="tab-content">
+            <div class="card">
+                <h2>Terms of Use</h2>
+                <p><strong>Effective Date</strong>: [Date of App Store Submission]</p>
+                
+                <h3>Acceptance of Terms</h3>
+                <p>By downloading, installing, or using TellmeList ("the App"), you agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use the App.</p>
+                
+                <h3>Description of Service</h3>
+                <p>TellmeList is a shopping list application that allows users to create and manage shopping lists using text and voice input. The App operates entirely on your device and does not require an internet connection to function.</p>
+                
+                <h3>User Responsibilities</h3>
+                <p>You agree to:</p>
+                <ul>
+                    <li>Use the App only for lawful purposes</li>
+                    <li>Not attempt to reverse engineer, decompile, or modify the App</li>
+                    <li>Not use the App in any way that could damage, disable, or impair the App</li>
+                </ul>
+                
+                <h3>Intellectual Property</h3>
+                <p>TellmeList, including its code, design, and all related content, is the intellectual property of the developer and is protected by copyright and other intellectual property laws.</p>
+                
+                <h3>Disclaimer of Warranties</h3>
+                <p>The App is provided "as is" without any warranties of any kind, either express or implied. We do not guarantee that the App will be error-free or uninterrupted.</p>
+                
+                <h3>Limitation of Liability</h3>
+                <p>To the fullest extent permitted by law, we shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use the App.</p>
+                
+                <h3>Changes to Terms</h3>
+                <p>We reserve the right to modify these Terms of Use at any time. We will notify users of any material changes by updating the "Effective Date" at the top of these terms.</p>
+                
+                <h3>Termination</h3>
+                <p>We reserve the right to terminate or suspend access to the App at our discretion, without prior notice, for conduct that we believe violates these Terms of Use or is harmful to other users, us, or third parties, or for any other reason.</p>
+                
+                <h3>Governing Law</h3>
+                <p>These Terms shall be governed by and construed in accordance with the laws of [Your Country/State], without regard to its conflict of law provisions.</p>
+                
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p>If you have any questions about these Terms of Use, please contact us at:</p>
+                    <p><strong>Email</strong>: <a href="mailto:support@stechbds.com">support@stechbds.com</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="support" class="tab-content">
+            <div class="card">
+                <h2>Support</h2>
+                <p>We're here to help you with any questions or issues you might have with TellmeList.</p>
+                
+                <h3>Frequently Asked Questions</h3>
+                
+                <h4>How do I add items to my shopping list?</h4>
+                <p>You can add items by typing them in the text field or by using the voice input button to speak your items.</p>
+                
+                <h4>Does TellmeList work without an internet connection?</h4>
+                <p>Yes! TellmeList is designed to work completely offline. All your data is stored locally on your device.</p>
+                
+                <h4>Is my voice data stored or sent to servers?</h4>
+                <p>No. Voice recognition is processed entirely on your device using Apple's built-in speech recognition. Voice data is converted to text locally and immediately discarded.</p>
+                
+                <h4>How do I delete my shopping lists?</h4>
+                <p>You can delete individual items by swiping left, or delete entire lists using the delete function. To remove all app data, simply delete the app from your iPhone.</p>
+                
+                <h4>Is TellmeList free?</h4>
+                <p>Yes, TellmeList is completely free to use with no hidden costs or in-app purchases.</p>
+                
+                <div class="contact-info">
+                    <h3>Contact Support</h3>
+                    <p>If you need further assistance, please contact us at:</p>
+                    <p><strong>Email</strong>: <a href="mailto:support@stechbds.com">support@stechbds.com</a></p>
+                    <p>We typically respond within 24-48 hours.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; [Current Year] TellmeList. All rights reserved.</p>
+        <p>Developer: Kwokwaiyip/Stechbds</p>
+    </footer>
+
+    <script>
+        // Tab functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.tab');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Remove active class from all tabs and contents
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    
+                    // Add active class to clicked tab and corresponding content
+                    tab.classList.add('active');
+                    const tabId = tab.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+            
+            // Set current year in footer
+            document.querySelector('footer p').innerHTML = document.querySelector('footer p').innerHTML.replace('[Current Year]', new Date().getFullYear());
+        });
+    </script>
+</body>
+</html>
